@@ -1,0 +1,38 @@
+﻿@using RD.Rental.Repository.Model;
+@model List<Car>
+
+@{
+    ViewData["Title"] = "Cars";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Year</th>
+            <th>Color</th>
+            <th>KM Driven</th>
+            <th>Fuel Type</th>
+            <th>Rent</th>
+            <th>Is Available</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var car in Model)
+        {
+            <tr>
+                <td>@car.Make</td>
+                <td>@car.Model</td>
+                <td>@car.Year</td>
+                <td>@car.Color</td>
+                <td>@car.KMDriven</td>
+                <td>@car.FuelType</td>
+                <td>@car.Rent</td>
+                <td>@car.IsAvailable</td>
+            </tr>
+        }
+    </tbody>
+</table>
