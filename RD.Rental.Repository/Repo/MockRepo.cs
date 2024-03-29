@@ -10,7 +10,7 @@ namespace RD.Rental.Repository.Repo
 {
     public class MockRepo: IRepository
     {
-        public IList<Car> GetCars()
+        public List<Car> GetCars()
         {
             // TODO: Implement the logic to retrieve the list of cars
             // from the database or any other data source
