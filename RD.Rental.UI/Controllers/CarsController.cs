@@ -29,6 +29,7 @@ namespace RD.Rental.UI.Controllers
                     new Car { Id = 3, Make = "Tata", Model = "Nexon", Year = 2022, Rent = 1500, FuelType = FuelType.Diesel, Color = "Black", KMDriven = 4000, IsAvailable = false }
                 };
             var deadCodevar = "abc";
+            var moredeadCode = deadCodevar;
         }
     }
 }
