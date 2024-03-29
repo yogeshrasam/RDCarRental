@@ -28,6 +28,7 @@ namespace RD.Rental.UI.Controllers
                     new Car { Id = 2, Make = "Ford", Model = "Figo", Year = 2015, Rent = 1200, FuelType = FuelType.Petrol, Color = "Blue", KMDriven = 6000, IsAvailable = true },
                     new Car { Id = 3, Make = "Tata", Model = "Nexon", Year = 2022, Rent = 1500, FuelType = FuelType.Diesel, Color = "Black", KMDriven = 4000, IsAvailable = false }
                 };
+            var deadCodevar = "abc";
         }
     }
 }
