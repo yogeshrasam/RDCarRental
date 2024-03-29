@@ -94,7 +94,7 @@ jobs:
     - if: matrix.build-mode == 'manual'
       shell: cmd
       run: |
-        msbuild RDCarRental.sln
+        msbuild RDCarRental.sln /p:Configuration=Release
         exit 1
 
     - name: Perform CodeQL Analysis
