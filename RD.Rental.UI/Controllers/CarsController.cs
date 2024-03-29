@@ -27,7 +27,7 @@ namespace RD.Rental.UI.Controllers
         private List<Car> GetCars(string password)
         {
             IRepository repo = new MockRepo();
-            return repo.GetCars();
+            return repo.GetCars().ToList();
             
             var deadCodevar = "abc";
             var moredeadCode = deadCodevar;
