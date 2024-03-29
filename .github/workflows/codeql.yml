@@ -95,7 +95,6 @@ jobs:
       shell: cmd
       run: |
         msbuild RDCarRental.sln /p:Configuration=Release
-        exit 1
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
