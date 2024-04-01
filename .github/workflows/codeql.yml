@@ -68,8 +68,7 @@ jobs:
       run: |
           mkdir PackagesSource
           dotnet restore
-          dotnet build ./RD.Rental.Repository/RD.Rental.Repository.csproj --configuration Release
-          dotnet build ./RD.Rental.UI/RD.Rental.UI.csproj --configuration Release
+          dotnet build ./RDCarRental.sln --configuration Release
 
     # ℹ️ Command-line programs to run using the OS shell.
     # 📚 See https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsrun
