@@ -66,6 +66,7 @@ jobs:
     # If this step fails, then you should remove it and run the build manually (see below)
     - name: Build
       run: |
+          mkdir PackagesSource
           dotnet restore
           dotnet build ./RD.Rental.Repository/RD.Rental.Repository.csproj --configuration Release
           dotnet build ./RD.Rental.UI/RD.Rental.UI.csproj --configuration Release
