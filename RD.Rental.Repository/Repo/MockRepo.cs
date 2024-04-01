@@ -59,4 +59,9 @@ namespace RD.Rental.Repository.Repo
             return year + "-" + month + "-" + day;
         }
     }
+    class Bad
+    {
+        interface IsPrintable { }
+        class Form1 : IsPrintable { }
+    }
 }
