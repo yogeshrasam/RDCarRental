@@ -34,10 +34,10 @@ namespace RD.Rental.Repository.Repo
 
         private void B()
         {
-            foreach (var arg in args)
+            for (int i=0;i<10;i++)
             {
                 var sb = new StringBuilder();
-                sb.Append("Hello ").Append("1");
+                sb.Append("Hello ").Append(i.ToString());
                 Console.WriteLine(sb);
             }       
         }
