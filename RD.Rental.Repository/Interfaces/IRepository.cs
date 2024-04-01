@@ -9,6 +9,6 @@ namespace RD.Rental.Repository.Interfaces
 {
     public interface IRepository
     {
-        IList<Car> GetCars();
+        List<Car> GetCars();
     }
 }

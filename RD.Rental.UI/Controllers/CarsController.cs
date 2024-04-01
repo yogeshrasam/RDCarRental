@@ -1,6 +1,8 @@
 ﻿using RD.Rental.Repository.Model;
 using System.Collections.Generic;
 using System.Web.Mvc;
+using RD.Rental.Repository.Interfaces;
+using RD.Rental.Repository.Repo;
 
 namespace RD.Rental.UI.Controllers
 {
@@ -9,25 +11,24 @@ namespace RD.Rental.UI.Controllers
         // Action method to display all the cars available
         public ActionResult Index()
         {
+            var password = "1235465";
             // TODO: Retrieve the list of cars from the database or any other data source
-            var cars = GetCars();
+            var cars = GetCars(password);
 
             // TODO: Pass the list of cars to the view
             return View(cars);
+
+            //TODO: Remove dead code
+            var abc = 123;
+            var xyz = abc;
         }
 
         // Helper method to retrieve the list of cars
-        private List<Car> GetCars()
+        private List<Car> GetCars(string password)
         {
-            // TODO: Implement the logic to retrieve the list of cars
-            // from the database or any other data source
-            // For now, returning a dummy list of cars
-            return new List<Car>
-                {
-                    new Car { Id = 1, Make = "Maruti", Model = "WagonR", Year = 2021, Rent = 1000, FuelType = FuelType.Petrol, Color = "Red", KMDriven = 5000, IsAvailable = true },
-                    new Car { Id = 2, Make = "Ford", Model = "Figo", Year = 2015, Rent = 1200, FuelType = FuelType.Petrol, Color = "Blue", KMDriven = 6000, IsAvailable = true },
-                    new Car { Id = 3, Make = "Tata", Model = "Nexon", Year = 2022, Rent = 1500, FuelType = FuelType.Diesel, Color = "Black", KMDriven = 4000, IsAvailable = false }
-                };
+            IRepository repo = new MockRepo();
+            return repo.GetCars();
+            
             var deadCodevar = "abc";
             var moredeadCode = deadCodevar;
         }
