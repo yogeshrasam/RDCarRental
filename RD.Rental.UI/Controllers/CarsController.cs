@@ -32,5 +32,11 @@ namespace RD.Rental.UI.Controllers
             var deadCodevar = "abc";
             var moredeadCode = deadCodevar;
         }
+
+        private void DoNothingMethod()
+        {
+            //TODO: 
+            var sampleVariable = "1234";
+        }
     }
 }
