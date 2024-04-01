@@ -51,8 +51,6 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
   
-    - name: install package
-      run:  npm install 
     - name: Build
       run: dotnet build --no-restore RDCarRental.sln
 
