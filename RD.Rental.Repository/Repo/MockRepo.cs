@@ -25,4 +25,21 @@ namespace RD.Rental.Repository.Repo
             var deadCodeVariable = 123;
         }
     }
+    class UnusedMethod
+    {
+        private void A()
+        {
+            B();
+        }
+
+        private void B()
+        {
+            foreach (var arg in args)
+            {
+                var sb = new StringBuilder();
+                sb.Append("Hello ").Append("1");
+                Console.WriteLine(sb);
+            }       
+        }
+    }
 }
