@@ -25,7 +25,7 @@ namespace RD.Rental.Repository.Repo
             var deadCodeVariable = 123;
         }
     }
-    class UnusedMethod
+    public class UnusedMethod
     {
         private void A()
         {
@@ -43,7 +43,7 @@ namespace RD.Rental.Repository.Repo
         }
     }
 
-    class Date
+    public class Date
     {
         private int year;
         private int month;
