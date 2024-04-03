@@ -6,6 +6,7 @@ namespace RD.Rental.Repository.Repo
         private int age;
         public OneMoreClass(string name, int age)
         {
+            // TODO: Assign name
             this.age = age;
         }
     }
