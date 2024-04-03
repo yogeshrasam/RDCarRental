@@ -51,13 +51,20 @@ namespace RD.Rental.Repository.Repo
 
         public String ConvertToISO()
         {
+            // TODO: Something
             return year + "-" + month + "-" + day;
         }
 
         public String ConvertToIso()
         {
-            // TODO:
+            
             return year + "-" + month + "-" + day;
+        }
+
+        public static double SolveQuadratic(double a, double b, double c)
+        {
+            // TODO: handle case where a == 0
+            return (-b + Math.Sqrt(b * b - 4 * a * c)) / (2 * a);
         }
     }
     
