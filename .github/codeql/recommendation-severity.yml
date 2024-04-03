@@ -1,8 +1,11 @@
-- description: "Custom Selectors for selecting the queries with recommendation severity"
-- include:
+name: "Custom Selectors for selecting the queries with recommendation severity"
+disable-default-queries: false
+queries:
+  - uses: security-and-quality
+query-filters:
+  - include:
     kind:
     - problem
-    - path-problem
     precision:
     - medium
     problem.severity:
