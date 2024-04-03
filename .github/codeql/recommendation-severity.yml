@@ -1,5 +1,6 @@
 name: "Custom Selectors for selecting the queries with recommendation severity"
 disable-default-queries: true
+queries: .
 query-filters:
   - include:
     kind:
