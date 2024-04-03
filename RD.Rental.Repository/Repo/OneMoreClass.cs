@@ -4,7 +4,7 @@ namespace RD.Rental.Repository.Repo
     {
         private string name;
         private int age;
-        public Person(string name, int age)
+        public OneMoreClass(string name, int age)
         {
             this.age = age;
         }
