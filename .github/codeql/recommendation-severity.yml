@@ -1,7 +1,5 @@
 name: "Custom Selectors for selecting the queries with recommendation severity"
 disable-default-queries: true
-queries:
-  - uses: security-and-quality
 query-filters:
   - include:
     kind:
