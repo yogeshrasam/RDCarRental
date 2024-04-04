@@ -1,6 +1,7 @@
 name: "Custom CodeQL config"
 
 queries:
+    - uses: security-and-quality
     - uses: ./.github/codeql/custom-code-scanning.qls
     - uses: ./.github/codeql/custom-csharp-queries
 # name: "Custom Selectors for selecting the queries with recommendation severity"
