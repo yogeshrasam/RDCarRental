@@ -4,19 +4,19 @@ queries:
     - uses: security-and-quality
     - uses: ./.github/codeql/custom-code-scanning.qls
     - uses: ./.github/codeql/custom-csharp-queries
-query-filters:
-    - exclude:
-      precision:
-      - medium
+# query-filters:
+#     - exclude:
+#       precision:
+#       - medium
 # name: "Custom Selectors for selecting the queries with recommendation severity"
 # disable-default-queries: true
 # queries:
 #   - uses: security-and-quality
-# query-filters:
-#   - include:
-#     kind:
-#     - problem
-#     precision:
-#     - medium
-#     problem.severity:
-#     - recommendation
+query-filters:
+  - include:
+    kind:
+    - problem
+    precision:
+    - high
+    problem.severity:
+    - recommendation
