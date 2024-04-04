@@ -4,7 +4,7 @@
  *              broken, or it may highlight an ambiguity in the software's specification.
  * @kind problem
  * @problem.severity recommendation
- * @precision high
+ * @precision medium
  * @id cs/custom-todo-comment
  * @tags maintainability
  *       external/cwe/cwe-546
