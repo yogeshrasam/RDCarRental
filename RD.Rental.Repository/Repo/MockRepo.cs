@@ -34,6 +34,7 @@ namespace RD.Rental.Repository.Repo
 
         private void B()
         {
+            // TODO: new
             for (int i=0;i<10;i++)
             {
                 var sb = new StringBuilder();
@@ -51,13 +52,11 @@ namespace RD.Rental.Repository.Repo
 
         public String ConvertToISO()
         {
-            // TODO: Something
             return year + "-" + month + "-" + day;
         }
 
         public String ConvertToIso()
         {
-            //TODO:
             return year + "-" + month + "-" + day;
         }
 
@@ -71,7 +70,6 @@ namespace RD.Rental.Repository.Repo
         {
             var abc = 123;
             var y = abc/2;
-            // TODO: one more todo
         }
     }
     
