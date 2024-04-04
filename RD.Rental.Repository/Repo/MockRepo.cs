@@ -66,6 +66,12 @@ namespace RD.Rental.Repository.Repo
             // TODO: handle case where a == 0
             return (-b + Math.Sqrt(b * b - 4 * a * c)) / (2 * a);
         }
+
+        public static void Perform()
+        {
+            var abc = 123;
+            var y = abc/2;
+        }
     }
     
 }
