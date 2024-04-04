@@ -69,9 +69,9 @@ namespace RD.Rental.Repository.Repo
 
         public static void Perform()
         {
-            // TODO: lol
             var abc = 123;
             var y = abc/2;
+            // TODO: one more todo
         }
     }
     
