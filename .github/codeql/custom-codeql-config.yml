@@ -1,0 +1,17 @@
+name: "Custom CodeQL config"
+
+queries:
+    - uses: ./.github/codeql/custom-code-scanning.qls
+    - uses: ./.github/codeql/custom-csharp-queries
+# name: "Custom Selectors for selecting the queries with recommendation severity"
+# disable-default-queries: true
+# queries:
+#   - uses: security-and-quality
+# query-filters:
+#   - include:
+#     kind:
+#     - problem
+#     precision:
+#     - medium
+#     problem.severity:
+#     - recommendation

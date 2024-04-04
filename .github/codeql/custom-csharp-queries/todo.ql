@@ -3,10 +3,10 @@
  * @description A comment that contains 'TODO' or similar keywords may indicate code that is incomplete or
  *              broken, or it may highlight an ambiguity in the software's specification.
  * @kind problem
- * @problem.severity recommendation
+ * @problem.severity warning
  * @precision high
- * @id cs/todo-comment
- * @tags maintainability
+ * @id cs/custom-todo-comment
+ * @tags security
  */
 
 import csharp
