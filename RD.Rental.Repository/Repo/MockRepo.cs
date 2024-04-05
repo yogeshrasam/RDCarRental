@@ -34,7 +34,6 @@ namespace RD.Rental.Repository.Repo
 
         private void B()
         {
-            // TODO: new
             for (int i=0;i<10;i++)
             {
                 var sb = new StringBuilder();
