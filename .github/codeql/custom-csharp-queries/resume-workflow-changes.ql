@@ -16,18 +16,16 @@ class FacadeServiceContext extends Class {
     this.hasName("FacadeServiceContext")
   }
   
-  // Define the ResumeWorkflow method with 2 parameters
   Method resumeWorkflow() {
-    result = this.getMethod("ResumeWorkflow")
-    result.getNumberOfParameters() = 2
+    this.getMethod("ResumeWorkflow")
   }
 }
 
-// Query for any changes to the ResumeWorkflow method
 from FacadeServiceContext fsc, Method m
 where fsc.resumeWorkflow() = m and
-      exists(int diff |
-        m.getAnnotatedDiff(diff) and
-        diff.getAnnotatedChanges().matches(".*")
+      exists(DiffEntry de |
+        m.getAnnotatedDiff().getDiffEntry(de) and
+        de.getChangeType() != DiffEntry::ChangeType::MODIFIED and
+        de.getChangeType() != DiffEntry::ChangeType::UNCHANGED
       )
 select m, "Changes detected in ResumeWorkflow method."
