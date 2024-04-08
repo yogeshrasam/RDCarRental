@@ -1,0 +1,25 @@
+<!DOCTYPE qhelp PUBLIC
+  "-//Semmle//qhelp//EN"
+  "qhelp.dtd">
+<qhelp>
+<overview>
+<p>
+Method name <code>Perform</code> should not be used in the code.
+</p>
+
+</overview>
+<recommendation>
+
+<p>
+Change the method name.
+</p>
+
+</recommendation>
+<example>
+
+
+</example>
+<references>
+
+</references>
+</qhelp>

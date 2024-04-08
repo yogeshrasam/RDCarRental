@@ -1,0 +1,4 @@
+name: custom-csharp-queries
+version: 0.0.0
+libraryPathDependencies: codeql-csharp
+suites: custom-csharp-suite

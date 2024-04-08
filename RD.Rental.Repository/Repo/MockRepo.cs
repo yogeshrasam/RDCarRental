@@ -51,13 +51,11 @@ namespace RD.Rental.Repository.Repo
 
         public String ConvertToISO()
         {
-            // TODO: Something
             return year + "-" + month + "-" + day;
         }
 
         public String ConvertToIso()
         {
-            
             return year + "-" + month + "-" + day;
         }
 
@@ -65,6 +63,12 @@ namespace RD.Rental.Repository.Repo
         {
             // TODO: handle case where a == 0
             return (-b + Math.Sqrt(b * b - 4 * a * c)) / (2 * a);
+        }
+
+        public static void Perform()
+        {
+            var abc = 123;
+            var y = abc/2;
         }
     }
     
