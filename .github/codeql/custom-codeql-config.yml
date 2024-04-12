@@ -12,6 +12,7 @@ queries:
 # disable-default-queries: true
 # queries:
 #   - uses: security-and-quality
+
 query-filters:
   - include:
     kind:
