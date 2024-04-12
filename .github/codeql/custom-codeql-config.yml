@@ -21,7 +21,7 @@ queries:
 # queries:
 #   - uses: security-and-quality
 
-#NOTE: This would not work as the filter is applied to the packs/suites that are already excluding problem.severity recommendation.  You would need to do this inside a .qls where you have more control.
+#NOTE: This would not work as the filter is applied to the packs/suites that are already excluding problem.severity recommendation.  You would need to do this by pulling in all queries from the pack and using filters or inside a .qls where you have more control.
 # query-filters:
 #   - include:
 #     kind:
