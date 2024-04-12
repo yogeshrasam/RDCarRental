@@ -1,5 +1,12 @@
 name: "Custom CodeQL config"
 
+packs:
+  - codeql/csharp-queries:Bad Practices/Comments/TodoComments.ql
+  - codeql/python-queries:Lexical/ToDoComment.ql
+  - codeql/javascript-queries:Comments/TodoComments.ql
+  - codeql/java-queries:Violations of Best Practice/Comments/TodoComments.ql
+  - codeql/cpp-queries:Documentation/TodoComments.ql
+
 queries:
     - uses: security-and-quality
     - uses: ./.github/codeql/custom-code-scanning.qls
