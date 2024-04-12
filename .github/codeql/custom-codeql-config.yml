@@ -1,5 +1,6 @@
 name: "Custom CodeQL config"
 
+# Explicitly pull in the TODO queries from the CodeQL built in packs (these are excluded from security-and-quality due to filter on problem.severity recommendation)
 packs:
   - codeql/csharp-queries:Bad Practices/Comments/TodoComments.ql
   - codeql/python-queries:Lexical/ToDoComment.ql
@@ -20,11 +21,12 @@ queries:
 # queries:
 #   - uses: security-and-quality
 
-query-filters:
-  - include:
-    kind:
-    - problem
-    precision:
-    - high
-    problem.severity:
-    - recommendation
+#NOTE: This would not work as the filter is applied to the packs/suites that are already excluding problem.severity recommendation.  You would need to do this inside a .qls where you have more control.
+# query-filters:
+#   - include:
+#     kind:
+#     - problem
+#     precision:
+#     - high
+#     problem.severity:
+#     - recommendation
